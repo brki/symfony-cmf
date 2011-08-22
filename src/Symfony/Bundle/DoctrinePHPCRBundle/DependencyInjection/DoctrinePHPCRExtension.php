@@ -235,7 +235,7 @@ class DoctrinePHPCRExtension extends AbstractDoctrineExtension
         $this->aliasMap = array();
         $this->bundleDirs = array();
 
-        $documentManager['mappings']['phpcr-odm'] = array('mapping' => true, 'is_bundle' => false, 'type' => 'annotation', 'dir' => __DIR__.'/../../../../../vendor/doctrine-phpcr-odm/lib/Doctrine/ODM/PHPCR/Document', 'prefix' => 'phpcr-odm');
+        $documentManager['mappings']['phpcr-odm'] = array('mapping' => true, 'is_bundle' => false, 'type' => 'annotation', 'dir' => __DIR__.'/../../../../../vendor/doctrine-phpcr-odm/lib/Doctrine/ODM/PHPCR/Document', 'prefix' => 'Doctrine\ODM\PHPCR\Document');
 
         $this->loadMappingInformation($documentManager, $container);
         $this->registerMappingDrivers($documentManager, $container);
